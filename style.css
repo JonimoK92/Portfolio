@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 5%;
+    background-color: black;
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    color: #00aaff;
+    font-weight: bold;
+}
+
+
+nav a {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: white;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    padding: 10rem 5% 5rem;
+}
+
+.home-img img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+.home-content p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.home-content h1 span {
+    color: #00aaff;
+}
+
+.home-content h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: #aaa;
+}
+
+.home-content p {
+    font-size: 1.4rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00aaff;
+    color: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skills h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+
+.skills-list span {
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    background-color: #111;
+    color: #00aaff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/*Page projet*/
+.projets {
+    padding: 10rem 5%;
+    text-align: center;
+}
+
+.projets h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #111;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.project-card h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.project-card p {
+    font-size: 1.4rem;
+    color: #aaa;
+    padding: 0 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    margin: 1rem 0 2rem;
+    color: #00aaff;
+}
