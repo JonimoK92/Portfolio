@@ -425,3 +425,36 @@ nav a:hover::after {
     background: linear-gradient(180deg, #33c1ff, #0066ff);
     box-shadow: 0 0 10px rgba(0, 170, 255, 0.6);
 }
+
+.cv-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cv-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #121212;
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+.cv-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.cv-menu a:hover {
+    background: #00aaff;
+    color: black;
+}
+
+.cv-dropdown.active .cv-menu {
+    display: block;
+}
