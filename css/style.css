@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+
+body {
+    background: radial-gradient(circle at top, #0f0f0f, #000);
+    color: #f5f5f5;
+    padding-top: 8rem;
+
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #1f1f1f;
+    z-index: 1000;
+}
+
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00aaff, #0055ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: black;
+    font-size: 1.6rem;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    font-size: 1.4rem;
+    color: #bbb;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+
+/* hover glow bleu */
+nav a:hover {
+    color: #00aaff;
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.6);
+}
+
+/* petit underline animé */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00aaff, transparent);
+    transition: 0.3s;
+    border-radius: 999px;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ================= HERO ================= */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    background: linear-gradient(90deg, #fff, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    color: #00aaff;
+    margin-top: 1rem;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 1.6rem;
+}
+
+.description {
+    max-width: 750px;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    color: #bbb;
+    line-height: 1.7;
+}
+
+/* ================= BUTTONS ================= */
+.buttons {
+    margin-top: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #00aaff;
+    color: black;
+    font-weight: 600;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 170, 255, 0.2);
+}
+
+.secondary {
+    border: 1px solid #00aaff;
+    color: #00aaff;
+}
+
+.secondary:hover {
+    background: #00aaff;
+    color: black;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    min-height: 100vh;
+    padding: 10rem 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-divider {
+    width: 75%;
+    height: 1px;
+    margin: 8rem auto;
+    background: #00aaff;
+    position: relative;
+}
+
+.section-divider::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 1px;
+    background: #00aaff;
+    box-shadow: 0 0 15px #00aaff;
+}
+
+.section h2 i {
+    margin-right: 10px;
+    color: #00aaff;
+}
+
+#about,
+#projects {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+#skills,
+#contact {
+    background: linear-gradient(180deg,
+            rgba(0, 170, 255, 0.04),
+            rgba(0, 0, 0, 0));
+}
+
+/* centrage vertical des sections */
+#about,
+#skills,
+#contact {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+
+    background: linear-gradient(90deg, #fff, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+
+    margin: 1.2rem auto 0;
+
+    background: linear-gradient(90deg,
+            transparent,
+            #00aaff,
+            transparent);
+
+    border-radius: 999px;
+    opacity: 0.9;
+}
+
+/* ================= ABOUT ================= */
+.box {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: #bbb;
+    line-height: 1.7;
+    padding: 2rem;
+    border-radius: 14px;
+}
+
+/* ================= GRID ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* ================= UNIFIED CARDS STYLE ================= */
+.card,
+.skill-card,
+.box {
+    background: #121212;
+    border-radius: 14px;
+
+    /* bordure principale plus visible */
+    border: 1px solid rgba(0, 170, 255, 0.35);
+
+    /* léger effet de profondeur propre */
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.65) inset,
+        0 0 10px rgba(0, 170, 255, 0.08);
+
+    padding: 2rem;
+    transition: 0.25s ease;
+}
+
+.card:hover,
+.skill-card:hover,
+.box:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(0, 170, 255, 0.65);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(0, 170, 255, 0.25) inset,
+        0 0 18px rgba(0, 170, 255, 0.18);
+}
+
+.card.project h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card.project p {
+    font-size: 1.5rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.card.project a {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+.date {
+    font-size: 1.3rem;
+    color: #00aaff;
+    margin: 0.5rem 0 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ================= SKILLS ================= */
+/* ================= SKILL CARD UPGRADE ================= */
+
+.skill-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* titre centré + icône */
+.skill-card h3 {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: #fff;
+}
+
+.skill-card h3 i {
+    color: #00aaff;
+    font-size: 1.6rem;
+}
+
+/* tags centrés proprement */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* 🔥 important */
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.tags span {
+    background: rgba(0, 170, 255, 0.10);
+    border: 1px solid rgba(0, 170, 255, 0.35);
+    color: #00aaff;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: 0.25s ease;
+}
+
+/* petit effet hover comme tes projects */
+.tags span:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 170, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.25);
+}
+
+/* ================= PROJECT LINKS ================= */
+.project a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #00aaff;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+/* ================= CONTACT ================= */
+.contact-text {
+    font-size: 1.6rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.socials a {
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #00aaff;
+    transform: translateY(-3px);
+}
+
+/* ===== SCROLLBAR GLOBAL ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00aaff, #0055ff);
+    border-radius: 999px;
+    border: 2px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #33c1ff, #0066ff);
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.6);
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0b0b0f;
+    color: #f5f5f5;
+}
+
+/* ================= HEADER (UNIFIÉ) ================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6%;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+
+    z-index: 100;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #00aaff;
+    color: black;
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: white;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #00aaff;
+    transform: translateY(-2px);
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 120px 60px 80px;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #ffffff, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* ================= TAGS ================= */
+.tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    padding: 6px 12px;
+    border: 1px solid #00aaff;
+    color: #00aaff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #00aaff;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= IMAGE ================= */
+.hero-image img {
+    width: 420px;
+    border-radius: 15px;
+    border: 2px solid #00aaff;
+}
+
+/* ================= SECTION ================= */
+.section {
+    padding: 80px 60px;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* ================= BOX ================= */
+.box {
+    border: 1px solid #00aaff;
+    background: rgba(0, 170, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    color: #bbb;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+/* ================= GRID ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #00aaff;
+    border-radius: 12px;
+    background: #121212;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

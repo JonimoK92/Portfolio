@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet IA | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">J</a>
+
+        <nav>
+            <a href="../index.html">Accueil</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Projet Intelligence Artificielle</h1>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Selenium</span>
+                <span>BeautifulSoup</span>
+                <span>Pandas</span>
+                <span>Scikit-learn</span>
+                <span>Machine Learning</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+            </div>
+
+            <a class="btn" href="https://github.com/JonimoK92/Projet-IA" target="_blank">
+                Voir le code GitHub
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="../assets/images/ia.png" alt="Projet IA">
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Présentation</h2>
+
+        <div class="box">
+
+            <p>
+                Ce projet met en place un pipeline complet de data science, allant du scraping automatisé de données
+                sur un site de vins jusqu’à la construction et l’évaluation de modèles de machine learning pour la
+                prédiction du prix des bouteilles.
+            </p> <br>
+
+            <p>
+                L’objectif est de prédire le prix d’un vin à partir de ses caractéristiques (appellation, notes de
+                critiques
+                de Robert Parker, Robinson et James Suckling) afin d’analyser l’impact de ces variables sur la
+                valorisation.
+            </p> <br>
+
+            <p>
+                La collecte des données repose sur du web scraping avec Selenium et BeautifulSoup, permettant
+                d’extraire automatiquement les informations depuis des pages dynamiques.
+            </p> <br>
+
+            <p>
+                Une étape importante de feature engineering est réalisée : gestion des valeurs manquantes via moyennes
+                par appellation, encodage des variables catégorielles et transformation des données pour les modèles.
+            </p> <br>
+
+            <p>
+                Plusieurs modèles de machine learning sont ensuite testés (régression linéaire, KNN, arbres de décision
+                et random forest), avec une évaluation basée sur le score R² et la validation croisée.
+            </p> <br>
+
+            <p>
+                Enfin, une analyse de l’impact du prétraitement (normalisation, standardisation et PCA) est effectuée
+                afin d’identifier les meilleures configurations pour améliorer les performances des modèles.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Pipeline technique</h2>
+
+        <div class="grid">
+
+            <div class="card">📥 Scraping automatisé (Selenium)</div>
+            <div class="card">🌐 Parsing HTML (BeautifulSoup)</div>
+            <div class="card">🧹 Nettoyage & structuration (Pandas)</div>
+            <div class="card">📊 Analyse exploratoire</div>
+            <div class="card">🤖 Modèles ML (Linear Regression, KNN, Random Forest)</div>
+            <div class="card">📈 Évaluation (R², cross-validation)</div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Modèles testés</h2>
+
+        <div class="grid">
+
+            <div class="card">📉 Régression Linéaire</div>
+            <div class="card">📍 KNN Regressor</div>
+            <div class="card">🌳 Decision Tree Regressor</div>
+            <div class="card">🌲 Random Forest Regressor</div>
+            <div class="card">⚙️ Préprocessing (Normalisation / Standardisation)</div>
+            <div class="card">🧠 PCA (réduction de dimension)</div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Résultats</h2>
+
+        <div class="box">
+
+            <p>
+                Le modèle KNN obtient les meilleures performances globales avec un score R² d’environ 0.50,
+                devant les modèles de régression linéaire et les arbres de décision.
+            </p> <br>
+
+            <p>
+                Les modèles ensemblistes comme Random Forest montrent également de bonnes performances,
+                avec une stabilité supérieure et une meilleure capacité de généralisation.
+            </p> <br>
+
+            <p>
+                L’analyse met en évidence que les notes des critiques (Robert Parker, Suckling, Robinson)
+                sont fortement corrélées au prix et constituent les variables les plus prédictives du dataset.
+            </p> <br>
+
+            <p>
+                Enfin, les tests de prétraitement (normalisation, standardisation et PCA) montrent un impact
+                variable selon les modèles, sans amélioration significative pour les modèles basés sur les arbres.
+            </p>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

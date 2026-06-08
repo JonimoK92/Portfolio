@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCloud | Projet</title>
+
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">J</a>
+
+        <nav>
+            <a href="../index.html">Accueil</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>MemoryCloud</h1>
+
+            <div class="tags">
+                <span>React</span>
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>API REST</span>
+                <span>Cloud Storage</span>
+                <span>Nginx</span>
+                <span>Docker</span>
+                <span>Authentication via cookies HTTP-only (Sanctum)</span>
+
+            </div>
+
+            <a class="btn" href="https://github.com/JonimoK92/MemoryCloud" target="_blank">
+                Voir le code GitHub
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="../assets/images/memory.png" alt="MemoryCloud preview">
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Présentation</h2>
+
+        <div class="box">
+
+            <p>
+                MemoryCloud est un projet personnel, une application fullstack de type SaaS permettant le stockage,
+                la gestion et l’organisation d’images dans une interface moderne et intuitive.
+            </p> <br>
+
+            <p>
+                Le projet repose sur une architecture découplée avec un frontend en React
+                et un backend en Laravel exposant une API REST.
+            </p> <br>
+
+            <p>
+                Le backend gère l’ensemble de la logique métier : authentification des utilisateurs,
+                gestion des fichiers, stockage des métadonnées et sécurisation des accès via
+                un système d’authentification basé sur cookies CSRF (Laravel Sanctum).
+            </p> <br>
+
+            <p>
+                Le frontend React consomme l’API pour offrir une expérience utilisateur fluide,
+                avec gestion des sessions, affichage dynamique des images et interactions en temps réel.
+            </p> <br>
+
+            <p>
+                Le projet utilise Docker en environnement de développement pour simplifier la configuration
+                et l’exécution de l’application. Nginx est utilisé comme serveur web pour gérer les requêtes
+                et servir l’application.
+            </p> <br>
+
+            <p>
+                Ce projet m’a permis de renforcer mes compétences en développement fullstack, mais également
+                d’explorer des notions proches de l’environnement DevOps, notamment à travers la conteneurisation
+                avec Docker, la gestion d’un serveur web avec Nginx et la structuration d’une application orientée
+                production.
+            </p> <br>
+
+            <p>
+                Le projet constitue une base évolutive sur laquelle je prévois d’intégrer des pratiques DevOps plus
+                avancées, notamment l’automatisation des déploiements via CI/CD et une approche plus structurée de mise
+                en
+                production.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Fonctionnalités</h2>
+
+        <div class="grid">
+
+            <div class="card">📤 Upload d’images</div>
+            <div class="card">🔐 Authentification utilisateur (Laravel Sanctum)</div>
+            <div class="card">⚙️ API REST complète (CRUD)</div>
+            <div class="card">📱 Interface React moderne et responsive</div>
+            <div class="card">🗑️ Suppression et gestion des médias</div>
+            <div class="card">🔄 Synchronisation frontend / backend via API</div>
+            <div class="card">🧪 Environnement de développement avec Docker</div>
+            <div class="card">🌐 Déploiement via serveur web Nginx</div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
